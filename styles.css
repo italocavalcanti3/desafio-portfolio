@@ -1,0 +1,45 @@
+* {
+  margin: 0 auto;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+@media (max-width: 1120px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: "Merriweather", sans-serif;
+  background: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 1440px;
+}
+
+div {
+  width: 348px;
+  background: var(--bg-cards);
+  padding: 2rem 2rem;
+  border-radius: 1.25rem;
+}
+
+div + div {
+  margin-top: 1.875rem;
+}
