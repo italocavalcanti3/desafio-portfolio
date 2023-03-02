@@ -6,35 +6,132 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Desafio Portfolio</title>
 </head>
 <body>
   <main>
+
     <aside>
-      <div class="userInfo">Dados do usuário</div>
-      <div class="userContact">Contato</div>
-      <div class="userTechnologies">Tecnologias</div>
-      <div class="userExperience">Experiências</div>
-      <div class="userEducation">Educação</div>
-    </aside>
-    <section>
-      <div>
-        <div>My projetcs</div>
-        <div>Project 1</div>
-        <div>Project 2</div>
+
+      <div class="userInfo">
+        <img src="https://github.com/italocavalcanti3.png" alt="Italo Cavalcanti">
+        <h1 class="userName">Italo Cavalcanti</h1>
+        <span>React Developer</span>
       </div>
-      <div>
-        <div>Recent posts</div>
-        <div>Post 1</div>
+
+      <div class="userContacts">
+        <div class="contacts">
+          <img src="./assets/map-pin.svg" alt="Ícone de mapa">
+          <span>Brasil</span>
+        </div>
+        <div class="contacts">
+          <img src="./assets/briefcase.svg" alt="Ícone de mapa">
+          <span>Zup</span>
+        </div>
+        <div class="contacts">
+          <a href="">
+            <img src="./assets/github.svg" alt="Ícone de mapa">
+            <span>italocavalcanti3</span>
+          </a>
+        </div>
+        <div class="contacts">
+          <a href="">
+            <img src="./assets/linkedin.svg" alt="Ícone de mapa">
+            <span>italocavalcanti</span>
+          </a>
+        </div>
+        <div class="contacts">
+          <a href="">
+            <img src="./assets/mail.svg" alt="Ícone de mapa">
+            <span>italobc93@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="asideHeader">
+        <h1>Tecnologias</h1>
+        <div class="technologies">
+          <div><span>JAVASCRIPT</span></div>
+          <div><span>REACTJS</span></div>
+          <div><span>HTML</span></div>
+          <div><span>CSS</span></div>
+          <div><span>REACT NATIVE</span></div>
+          <div><span>SWIFT</span></div>
+          <div><span>JAVA</span></div>
+          <div><span>GITHUB</span></div>
+          <div><span>GIT</span></div>
+        </div>
+      </div>
+
+      <div class="experiencesAndEducation">
+        <h1>Experiências</h1>
+
+        <ul>
+          <li>
+            <div>
+              <span class="title">Zup Innovation</span>
+              <span class="period">2022 - Atualmente</span>
+              <span class="office">iOS Developer Jr</span>
+            </div>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <div>
+              <span class="title">Milvus TI</span>
+              <span class="period">2020 - 2022</span>
+              <span class="office">Motion Designer Pleno</span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="experiencesAndEducation">
+        <h1>Educação</h1>
+
+        <ul>
+          <li>
+            <div>
+              <span class="title">Rocketseat</span>
+              <span class="period">2023 - 2023</span>
+              <span class="office">Trilha ReactJS</span>
+            </div>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <div>
+              <span class="title">Rocketseat</span>
+              <span class="period">2022 - 2022</span>
+              <span class="office">Trilha React Native</span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <section>
+
+      <div class="sectionHeader">
+        <h1>My Projects</h1>
+        <span><a>Veja todos</a></span>
+      </div>
+      <div class="sectionHeader">
+        <h1>Recent Posts</h1>
       </div>
 
     </section>
+
   </main>
-
-
-  <script src="/scripts.js"></script>
+  <footer><span>Feito com 💜 por Italo Cavalcanti</span></footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
