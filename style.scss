@@ -60,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+span {
+  color: var(--text-color);
+}
+
 a {
   text-decoration: none;
   color: var(--link-color);
@@ -220,6 +224,76 @@ main {
         font-weight: 400;
       }
     }
+
+    .repositories {
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      display: flex;
+      gap: var(--30px);
+
+      button {
+        flex: 1;
+        cursor: pointer;
+        background: none;
+        border: none;
+      }
+
+      .repository {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--30px);
+        gap: var(--20px);
+
+        div {
+          box-shadow: none;
+          padding: 0;
+        }
+
+        .repo-name {
+          flex: 1;
+          display: flex;
+        }
+
+        .repo-description {
+          text-align: left;
+        }
+
+
+        .repo-footer {
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    /* 
+    <button type="button">
+          <div class="repository">
+            <div>
+              <img src="./assets/folder.svg" alt="Ícone de pasta">
+              <h1>repo-name</h1>
+            </div>
+            <span>Descrição do repositório</span>
+            <div class="repo-footer">
+              <div class="engages">
+                <img src="./assets/star.svg" alt="Ícone de estrela">
+                <span>100</span>
+                <img src="./assets/git-branch.svg" alt="Ícone de branch">
+                <span>100</span>
+              </div>
+              <div class="language">
+                <img src="./assets/elipse.svg" alt="Ícone de elipse">
+                <span>Javascript</span>
+              </div>
+            </div>
+          </div>
+      </button>
+
+    */
+
   }
 }
 

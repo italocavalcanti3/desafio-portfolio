@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-color);
   font-size: var(--20px);
   font-weight: bold;
+}
+
+span {
+  color: var(--text-color);
 }
 
 a {
@@ -181,6 +186,30 @@ main section {
   display: flex;
   flex-direction: column;
   gap: var(--30px);
+  /* 
+  <button type="button">
+        <div class="repository">
+          <div>
+            <img src="./assets/folder.svg" alt="Ícone de pasta">
+            <h1>repo-name</h1>
+          </div>
+          <span>Descrição do repositório</span>
+          <div class="repo-footer">
+            <div class="engages">
+              <img src="./assets/star.svg" alt="Ícone de estrela">
+              <span>100</span>
+              <img src="./assets/git-branch.svg" alt="Ícone de branch">
+              <span>100</span>
+            </div>
+            <div class="language">
+              <img src="./assets/elipse.svg" alt="Ícone de elipse">
+              <span>Javascript</span>
+            </div>
+          </div>
+        </div>
+    </button>
+
+  */
 }
 main section .sectionHeader {
   display: flex;
@@ -190,6 +219,42 @@ main section .sectionHeader {
 main section .sectionHeader span {
   font-size: var(--14px);
   font-weight: 400;
+}
+main section .repositories {
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  gap: var(--30px);
+}
+main section .repositories button {
+  flex: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+main section .repositories .repository {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--30px);
+  gap: var(--20px);
+}
+main section .repositories .repository div {
+  box-shadow: none;
+  padding: 0;
+}
+main section .repositories .repository .repo-name {
+  flex: 1;
+  display: flex;
+}
+main section .repositories .repository .repo-description {
+  text-align: left;
+}
+main section .repositories .repository .repo-footer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
