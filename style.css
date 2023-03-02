@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -32,12 +31,28 @@
 
 @media (max-width: 1120px) {
   html {
-    font-size: 77.77%;
+    font-size: 90%;
+  }
+  html #repositories button {
+    flex: 1;
   }
 }
 @media (max-width: 720px) {
   html {
-    font-size: 50%;
+    font-size: 70%;
+  }
+  html main {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+  }
+  html main aside {
+    flex: 1;
+  }
+  html main section #repositories {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -70,7 +85,7 @@ a {
   transition: filter 0.2s;
 }
 a:hover {
-  filter: brightness(0.8);
+  filter: brightness(1.1);
 }
 
 main {
@@ -186,75 +201,79 @@ main section {
   display: flex;
   flex-direction: column;
   gap: var(--30px);
-  /* 
-  <button type="button">
-        <div class="repository">
-          <div>
-            <img src="./assets/folder.svg" alt="Ícone de pasta">
-            <h1>repo-name</h1>
-          </div>
-          <span>Descrição do repositório</span>
-          <div class="repo-footer">
-            <div class="engages">
-              <img src="./assets/star.svg" alt="Ícone de estrela">
-              <span>100</span>
-              <img src="./assets/git-branch.svg" alt="Ícone de branch">
-              <span>100</span>
-            </div>
-            <div class="language">
-              <img src="./assets/elipse.svg" alt="Ícone de elipse">
-              <span>Javascript</span>
-            </div>
-          </div>
-        </div>
-    </button>
-
-  */
+}
+main section span {
+  font-size: var(--14px);
+  font-weight: 400;
 }
 main section .sectionHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main section .sectionHeader span {
-  font-size: var(--14px);
-  font-weight: 400;
-}
-main section .repositories {
+main section #repositories {
   box-shadow: none;
   background: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: var(--30px);
 }
-main section .repositories button {
-  flex: 1;
+main section #repositories button {
   cursor: pointer;
   background: none;
   border: none;
+  flex-basis: calc(50% - var(--30px));
+  transition: filter 0.2s;
 }
-main section .repositories .repository {
+main section #repositories button:hover {
+  filter: brightness(1.05);
+}
+main section #repositories .repository {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--30px);
   gap: var(--20px);
 }
-main section .repositories .repository div {
+main section #repositories .repository div {
   box-shadow: none;
   padding: 0;
+  border-radius: 0;
 }
-main section .repositories .repository .repo-name {
+main section #repositories .repository .repo-name {
   flex: 1;
   display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-main section .repositories .repository .repo-description {
+main section #repositories .repository .repo-description {
   text-align: left;
+  font-size: var(--14px);
+  font-weight: 400;
 }
-main section .repositories .repository .repo-footer {
+main section #repositories .repository .repo-footer {
   flex: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+main section #repositories .repository .repo-footer .engages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+main section #repositories .repository .repo-footer .engages .engage {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main section #repositories .repository .repo-footer .language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 footer {
